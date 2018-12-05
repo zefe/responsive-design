@@ -70,6 +70,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hero-image {
@@ -90,6 +91,7 @@ h2 {
   justify-content: center;
   justify-content: space-between;
   box-shadow: 0 0 10px rgba(0,0,0,.2);
+  flex-wrap: wrap;
 }
 
 .project-title {
@@ -111,12 +113,17 @@ h2 {
 }
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
-.project-igageContainer{
-  width: 500px;
+.project-imageContainer {
+  width: 50%;
 }
+
+.project-imageContainer img {
+  max-width: 100%;
+}
+
 .menu {
   height: inherit;
 }
@@ -128,6 +135,7 @@ h2 {
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 ol,ul {
   margin: 0;
@@ -166,6 +174,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer img {
@@ -185,8 +194,8 @@ footer a {
 }
 
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -227,6 +236,7 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -278,12 +288,109 @@ footer a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container {
-  width: 1000px;
+.container {  
+  flex: 1;
+  max-width: 1000px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
   flex-wrap: inherit;
+}
+
+/* Desktop First que empiece desde el MediaQuery mas grande */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1em;
+  }
+}
+
+/* @media screen and (max-width: 768px) { */
+  @media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: block;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+  }
+  .header .logo {
+    text-align: center;
+  }
+  .project {
+    display: block;
+  }
+  .project-imageContainer {
+    width: auto;
+  }
+  .project-details {
+    width: auto;
+    /* font-size: 16px; */
+  }
+  .project-course .project-date .project-url {
+    margin: .3em 0;
+  }
+  .project-title {
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  .project-url {
+    font-size: 1em;
+  }
+  .project-course {
+    font-size: 1em;
+  }
+  .project-date {
+    font-size: 1em;
+  }
+  .project-description {
+    font-size: .8em;
+  }
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
+  .event-details {
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+  .form-email {
+    margin: 1em auto;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
 }
