@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
+  <i class="icon-menu burger-button"></i>
   <header class="header">
     <div class="container">
         <figure class="logo">
@@ -31,7 +32,7 @@
     </div>
   </header>
 
-  <!-- <section class="hero">
+  <section class="hero">
     <div class="container">
         <h1>
           Lorem ipsum dolor <strong>consectetur</strong><br/>
@@ -43,7 +44,7 @@
         </figure>
 
     </div>
-  </section> -->
+  </section>
 
   <section id="portafolio" class="portfolio">
     <div class="container">
@@ -86,12 +87,18 @@
     </div>
   </section>
 
+  
+
+
   <div class="container" id="eventos">
     <h2 class="event-list-title">Más sobre mi experiencia</h2>
   </div>
 
+
+
   <section id="eventos" class="event-list">
     <div class="container">
+
       <article class="event">
         <div>
           <figure class="event-imageContainer">
@@ -111,8 +118,9 @@
       <article class="event">
         <div>
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
-          </figure>        
+            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500"/> -->
+          </figure>
+          <video class="html-video" src="video/f8.mp4" width="1280" height="720" controls></video>
         </div>
         <div class="event-details">
             <h3 class="event-title">Platzi talks GDL</h3>
@@ -127,7 +135,10 @@
       <article class="event">
         <div>
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
+              <div class="flexible-video">
+                  <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/8j0Wi-1xj_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500"/> -->
           </figure>        
         </div>
         <div class="event-details">
