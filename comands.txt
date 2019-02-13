@@ -87,13 +87,11 @@ LLAVE GITHUB
 
 git remote (Añadiendo un repositorio remoto a uno local)
 git remote add origin https://github.com/zefetorres/invi.git
-git remote -v : verificar si lo bajo bien
-git remote remove origin : para eliminarlo porsi no lo vamos a usar
+git remote -v | Para verificar si lo bajo bien
+git remote remove origin | Para eliminarlo porsi no lo vamos a usar
 
-git fetch origin master 
-origin= remoto | master= rama del remoto
-ahora tienes una rama llamada origin/master
-que pueedes ver con 'git branch -a'
+git fetch origin master :::  origin= remoto y master= rama del remoto
+ahora tienes una rama llamada origin/master que pueedes ver con 'git branch -a'
 git merge origin/master
 si obtienes un error usar la siguiente linea
 git merge origin/master --allow-unrelated-histories
