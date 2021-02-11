@@ -98,8 +98,12 @@ git merge origin/master --allow-unrelated-histories
 git pull origin master
 
 git remote show origin - Get information about remote.
-git remote add -f -t namebranhc wtw https://zeferinotorres@bitbucket.org/r6team/wtw-web.git    :: Agregar rama remota de otro repositorio
+git remote add -f -t RAMAREMOTA RAMALOCAL https://zeferinotorres@bitbucket.org/r6team/wtw-web.git    :: Agregar rama remota de otro repositorio
 -Hacer Merge con lo rama que quieres recibir los cambios
+*Una vez que bajas la rama remota
+    -te mueves a la rama que quieres recibir los cambios que tienes en tu local
+    git checkout RAMAREMOTA
+    git merge RAMALOCAL --allow-unrelated-histories *por si te da conflicto el merge
 
 git push origin master : subiendo cambios de local al repositorio remoto
 git push origin master --tags : subiendo etiquetas
